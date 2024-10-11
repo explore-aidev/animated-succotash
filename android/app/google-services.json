@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "88083005117",
+    "firebase_url": "https://explore-56pj5q-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "explore-56pj5q",
+    "storage_bucket": "explore-56pj5q.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88083005117:android:7b287243b2218babf481d4",
+        "android_client_info": {
+          "package_name": "com.explorejobs.my"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88083005117-4cllsbf4oe3hkafbvfqshk2j9of2in4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH_fBQEoCOzw9YtoX8uxhzmm8eqv_xbsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88083005117-4cllsbf4oe3hkafbvfqshk2j9of2in4t.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "88083005117-ga036bck9nfutdfda5d382a7r8a0u379.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.explorejobs.my"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
