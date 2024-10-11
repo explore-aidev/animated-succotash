@@ -177,16 +177,16 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color error = const Color(0xFFF44336);
   late Color info = const Color(0xFF2196F3);
 
-  late Color oliveGreen = Color(0xFF525017);
-  late Color brightRed = Color(0xFFFC1010);
-  late Color darkBlueBlack = Color(0xFF0D0D26);
-  late Color yellowOrange = Color(0xFFFBBC05);
-  late Color lightGray = Color(0xFFCACBCE);
-  late Color softPink = Color(0xFFFFEBF3);
-  late Color mediumBlue = Color(0xFF5386E4);
-  late Color veryLightGray = Color(0xFFFAFAFD);
-  late Color green = Color(0xFF0E9D57);
-  late Color pinkishRed = Color(0xFFE74D89);
+  late Color oliveGreen = const Color(0xFF525017);
+  late Color brightRed = const Color(0xFFFC1010);
+  late Color darkBlueBlack = const Color(0xFF0D0D26);
+  late Color yellowOrange = const Color(0xFFFBBC05);
+  late Color lightGray = const Color(0xFFCACBCE);
+  late Color softPink = const Color(0xFFFFEBF3);
+  late Color mediumBlue = const Color(0xFF5386E4);
+  late Color veryLightGray = const Color(0xFFFAFAFD);
+  late Color green = const Color(0xFF0E9D57);
+  late Color pinkishRed = const Color(0xFFE74D89);
 }
 
 abstract class Typography {
@@ -583,16 +583,16 @@ class DarkModeTheme extends FlutterFlowTheme {
   late Color error = const Color(0xFF8B0000);
   late Color info = const Color(0xFF1A73E8);
 
-  late Color oliveGreen = Color(0xFF525017);
-  late Color brightRed = Color(0xFFFC1010);
-  late Color darkBlueBlack = Color(0xFF0D0D26);
-  late Color yellowOrange = Color(0xFFFBBC05);
-  late Color lightGray = Color(0xFFCACBCE);
-  late Color softPink = Color(0xFFFFEBF3);
-  late Color mediumBlue = Color(0xFF5386E4);
-  late Color veryLightGray = Color(0xFFFAFAFD);
-  late Color green = Color(0xFF0E9D57);
-  late Color pinkishRed = Color(0xFFE74D89);
+  late Color oliveGreen = const Color(0xFF525017);
+  late Color brightRed = const Color(0xFFFC1010);
+  late Color darkBlueBlack = const Color(0xFF0D0D26);
+  late Color yellowOrange = const Color(0xFFFBBC05);
+  late Color lightGray = const Color(0xFFCACBCE);
+  late Color softPink = const Color(0xFFFFEBF3);
+  late Color mediumBlue = const Color(0xFF5386E4);
+  late Color veryLightGray = const Color(0xFFFAFAFD);
+  late Color green = const Color(0xFF0E9D57);
+  late Color pinkishRed = const Color(0xFFE74D89);
 }
 
 extension TextStyleHelper on TextStyle {

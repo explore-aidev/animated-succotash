@@ -1,20 +1,14 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
-import '/backend/backend.dart';
 
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
 import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -79,62 +73,62 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? NavBarPage() : OnboardingWidget(),
+          appStateNotifier.loggedIn ? const NavBarPage() : const OnboardingWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? NavBarPage() : OnboardingWidget(),
+              appStateNotifier.loggedIn ? const NavBarPage() : const OnboardingWidget(),
         ),
         FFRoute(
           name: 'Onboarding1',
           path: '/onboarding1',
-          builder: (context, params) => Onboarding1Widget(),
+          builder: (context, params) => const Onboarding1Widget(),
         ),
         FFRoute(
           name: 'Onboarding',
           path: '/onboarding',
-          builder: (context, params) => OnboardingWidget(),
+          builder: (context, params) => const OnboardingWidget(),
         ),
         FFRoute(
           name: 'Onboarding2',
           path: '/onboarding2',
-          builder: (context, params) => Onboarding2Widget(),
+          builder: (context, params) => const Onboarding2Widget(),
         ),
         FFRoute(
           name: 'Start',
           path: '/Start',
-          builder: (context, params) => StartWidget(),
+          builder: (context, params) => const StartWidget(),
         ),
         FFRoute(
           name: 'CreateAccount',
           path: '/createAccount',
-          builder: (context, params) => CreateAccountWidget(),
+          builder: (context, params) => const CreateAccountWidget(),
         ),
         FFRoute(
           name: 'Login',
           path: '/login',
-          builder: (context, params) => LoginWidget(),
+          builder: (context, params) => const LoginWidget(),
         ),
         FFRoute(
           name: 'Home1',
           path: '/home1',
           builder: (context, params) =>
-              params.isEmpty ? NavBarPage(initialPage: 'Home1') : Home1Widget(),
+              params.isEmpty ? const NavBarPage(initialPage: 'Home1') : const Home1Widget(),
         ),
         FFRoute(
           name: 'Home2',
           path: '/home2',
           builder: (context, params) =>
-              params.isEmpty ? NavBarPage(initialPage: 'Home2') : Home2Widget(),
+              params.isEmpty ? const NavBarPage(initialPage: 'Home2') : const Home2Widget(),
         ),
         FFRoute(
           name: 'Homepage',
           path: '/homepage',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Homepage')
-              : HomepageWidget(),
+              ? const NavBarPage(initialPage: 'Homepage')
+              : const HomepageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -373,7 +367,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {
