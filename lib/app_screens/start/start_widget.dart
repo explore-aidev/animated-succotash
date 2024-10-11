@@ -88,6 +88,8 @@ class _StartWidgetState extends State<StartWidget>
         ],
       ),
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -234,7 +236,9 @@ class _StartWidgetState extends State<StartWidget>
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(8.0),
                               child: Image.asset(
-                                'assets/images/Group_82.png',
+                                Theme.of(context).brightness == Brightness.dark
+                                    ? 'assets/images/Group_82.png'
+                                    : 'assets/images/Group_82.png',
                                 width: 62.0,
                                 height: 30.0,
                                 fit: BoxFit.contain,

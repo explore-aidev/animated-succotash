@@ -319,16 +319,18 @@ class FFRoute {
                 )
               : builder(context, ffParams);
           final child = appStateNotifier.loading
-              ? Container(
-                  color: FlutterFlowTheme.of(context).primaryBackground,
-                  child: Center(
-                    child: Image.asset(
-                      'assets/images/LOGO-EXPLORE.gif',
-                      width: 300.0,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                )
+              ? isWeb
+                  ? Container()
+                  : Container(
+                      color: FlutterFlowTheme.of(context).primaryBackground,
+                      child: Center(
+                        child: Image.asset(
+                          'assets/images/LOGO-EXPLORE.gif',
+                          width: 300.0,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    )
               : page;
 
           final transitionInfo = state.transitionInfo;

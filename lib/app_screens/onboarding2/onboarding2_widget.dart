@@ -88,6 +88,8 @@ class _Onboarding2WidgetState extends State<Onboarding2Widget>
         ],
       ),
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override

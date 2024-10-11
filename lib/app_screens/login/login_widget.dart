@@ -31,6 +31,8 @@ class _LoginWidgetState extends State<LoginWidget> {
 
     _model.passwordTextController ??= TextEditingController();
     _model.passwordFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -116,7 +118,10 @@ class _LoginWidgetState extends State<LoginWidget> {
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(8.0),
                                       child: Image.asset(
-                                        'assets/images/2-e1721133965145.png',
+                                        Theme.of(context).brightness ==
+                                                Brightness.dark
+                                            ? 'assets/images/2-e1721133965145.png'
+                                            : 'assets/images/2-e1721133965145.png',
                                         width: double.infinity,
                                         height: double.infinity,
                                         fit: BoxFit.contain,
@@ -424,8 +429,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                   return;
                                                 }
 
-                                                context.goNamedAuth(
-                                                    'Home1', context.mounted);
+                                                context.goNamedAuth('Homepage',
+                                                    context.mounted);
                                               },
                                               text: FFLocalizations.of(context)
                                                   .getText(
@@ -590,7 +595,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                               }
 
                                               context.goNamedAuth(
-                                                  'Home1', context.mounted);
+                                                  'Homepage', context.mounted);
                                             },
                                             child: Container(
                                               width: 25.0,
@@ -602,7 +607,11 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                                 child: Image.asset(
-                                                  'assets/images/google.png',
+                                                  Theme.of(context)
+                                                              .brightness ==
+                                                          Brightness.dark
+                                                      ? 'assets/images/google.png'
+                                                      : 'assets/images/google.png',
                                                   width: 40.0,
                                                   height: 40.0,
                                                   fit: BoxFit.cover,
@@ -627,7 +636,10 @@ class _LoginWidgetState extends State<LoginWidget> {
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
                                               child: Image.asset(
-                                                'assets/images/communication.png',
+                                                Theme.of(context).brightness ==
+                                                        Brightness.dark
+                                                    ? 'assets/images/communication.png'
+                                                    : 'assets/images/communication.png',
                                                 width: 40.0,
                                                 height: 40.0,
                                                 fit: BoxFit.cover,
@@ -649,7 +661,10 @@ class _LoginWidgetState extends State<LoginWidget> {
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
                                               child: Image.asset(
-                                                'assets/images/apple-logo.png',
+                                                Theme.of(context).brightness ==
+                                                        Brightness.dark
+                                                    ? 'assets/images/apple-logo.png'
+                                                    : 'assets/images/apple-logo.png',
                                                 width: 40.0,
                                                 height: 40.0,
                                                 fit: BoxFit.cover,

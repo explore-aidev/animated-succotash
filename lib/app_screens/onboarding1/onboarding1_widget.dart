@@ -88,6 +88,8 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
         ],
       ),
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -152,7 +154,9 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(8.0),
                           child: Image.asset(
-                            'assets/images/Browser_stats-amico_1.png',
+                            Theme.of(context).brightness == Brightness.dark
+                                ? 'assets/images/Browser_stats-amico_1.png'
+                                : 'assets/images/Browser_stats-amico_1.png',
                             width: 200.0,
                             height: 200.0,
                             fit: BoxFit.cover,

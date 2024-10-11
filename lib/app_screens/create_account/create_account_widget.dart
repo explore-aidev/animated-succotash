@@ -38,6 +38,8 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
 
     _model.passwordConfirmTextController ??= TextEditingController();
     _model.passwordConfirmFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -123,7 +125,10 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(8.0),
                                       child: Image.asset(
-                                        'assets/images/2-e1721133965145.png',
+                                        Theme.of(context).brightness ==
+                                                Brightness.dark
+                                            ? 'assets/images/2-e1721133965145.png'
+                                            : 'assets/images/2-e1721133965145.png',
                                         width: 169.0,
                                         height: 200.0,
                                         fit: BoxFit.contain,
@@ -903,7 +908,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               }
 
                                               context.goNamedAuth(
-                                                  'Home1', context.mounted);
+                                                  'Homepage', context.mounted);
                                             },
                                             child: Container(
                                               width: 25.0,
@@ -915,7 +920,11 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                                 child: Image.asset(
-                                                  'assets/images/google.png',
+                                                  Theme.of(context)
+                                                              .brightness ==
+                                                          Brightness.dark
+                                                      ? 'assets/images/google.png'
+                                                      : 'assets/images/google.png',
                                                   width: 40.0,
                                                   height: 40.0,
                                                   fit: BoxFit.cover,
@@ -940,7 +949,10 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
                                               child: Image.asset(
-                                                'assets/images/communication.png',
+                                                Theme.of(context).brightness ==
+                                                        Brightness.dark
+                                                    ? 'assets/images/communication.png'
+                                                    : 'assets/images/communication.png',
                                                 width: 40.0,
                                                 height: 40.0,
                                                 fit: BoxFit.cover,
@@ -962,7 +974,10 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               borderRadius:
                                                   BorderRadius.circular(8.0),
                                               child: Image.asset(
-                                                'assets/images/apple-logo.png',
+                                                Theme.of(context).brightness ==
+                                                        Brightness.dark
+                                                    ? 'assets/images/apple-logo.png'
+                                                    : 'assets/images/apple-logo.png',
                                                 width: 40.0,
                                                 height: 40.0,
                                                 fit: BoxFit.cover,

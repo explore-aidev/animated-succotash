@@ -23,6 +23,8 @@ void main() async {
 
   await initFirebase();
 
+  await FlutterFlowTheme.initialize();
+
   runApp(MyApp());
 }
 
@@ -38,7 +40,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   Locale? _locale;
 
-  ThemeMode _themeMode = ThemeMode.system;
+  ThemeMode _themeMode = FlutterFlowTheme.themeMode;
 
   late AppStateNotifier _appStateNotifier;
   late GoRouter _router;
@@ -59,7 +61,7 @@ class _MyAppState extends State<MyApp> {
       });
     jwtTokenStream.listen((_) {});
     Future.delayed(
-      Duration(milliseconds: 5000),
+      Duration(milliseconds: isWeb ? 0 : 5000),
       () => _appStateNotifier.stopShowingSplashImage(),
     );
   }
@@ -77,6 +79,7 @@ class _MyAppState extends State<MyApp> {
 
   void setThemeMode(ThemeMode mode) => safeSetState(() {
         _themeMode = mode;
+        FlutterFlowTheme.saveThemeMode(mode);
       });
 
   @override
@@ -98,6 +101,10 @@ class _MyAppState extends State<MyApp> {
         brightness: Brightness.light,
         useMaterial3: false,
       ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+        useMaterial3: false,
+      ),
       themeMode: _themeMode,
       routerConfig: _router,
     );
@@ -116,7 +123,7 @@ class NavBarPage extends StatefulWidget {
 
 /// This is the private State class that goes with NavBarPage.
 class _NavBarPageState extends State<NavBarPage> {
-  String _currentPageName = 'Home1';
+  String _currentPageName = 'Homepage';
   late Widget? _currentPage;
 
   @override

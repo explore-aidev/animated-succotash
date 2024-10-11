@@ -76,6 +76,8 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
         ],
       ),
     });
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
@@ -237,7 +239,9 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(8.0),
                               child: Image.asset(
-                                'assets/images/Group_82_(1).png',
+                                Theme.of(context).brightness == Brightness.dark
+                                    ? 'assets/images/Group_82_(1).png'
+                                    : 'assets/images/Group_82_(1).png',
                                 width: 62.0,
                                 height: 30.0,
                                 fit: BoxFit.contain,

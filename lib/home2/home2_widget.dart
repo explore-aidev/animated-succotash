@@ -25,6 +25,8 @@ class _Home2WidgetState extends State<Home2Widget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => Home2Model());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
