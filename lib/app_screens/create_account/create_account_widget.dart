@@ -678,18 +678,8 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                     ));
 
                                                 context.pushNamedAuth(
-                                                  'Homepage',
-                                                  context.mounted,
-                                                  extra: <String, dynamic>{
-                                                    kTransitionInfoKey:
-                                                        const TransitionInfo(
-                                                      hasTransition: true,
-                                                      transitionType:
-                                                          PageTransitionType
-                                                              .bottomToTop,
-                                                    ),
-                                                  },
-                                                );
+                                                    'HomeNot_Signed',
+                                                    context.mounted);
                                               },
                                               text: FFLocalizations.of(context)
                                                   .getText(
@@ -905,8 +895,8 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                 return;
                                               }
 
-                                              context.goNamedAuth(
-                                                  'Homepage', context.mounted);
+                                              context.goNamedAuth('HomeSigned',
+                                                  context.mounted);
                                             },
                                             child: Container(
                                               width: 25.0,

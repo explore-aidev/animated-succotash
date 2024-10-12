@@ -9,7 +9,6 @@ import 'backend/firebase/firebase_config.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/internationalization.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'index.dart';
 
 void main() async {
@@ -121,7 +120,7 @@ class NavBarPage extends StatefulWidget {
 
 /// This is the private State class that goes with NavBarPage.
 class _NavBarPageState extends State<NavBarPage> {
-  String _currentPageName = 'Homepage';
+  String _currentPageName = 'HomeSigned';
   late Widget? _currentPage;
 
   @override
@@ -134,9 +133,9 @@ class _NavBarPageState extends State<NavBarPage> {
   @override
   Widget build(BuildContext context) {
     final tabs = {
-      'Homepage': const HomepageWidget(),
-      'Home1': const Home1Widget(),
-      'Home2': const Home2Widget(),
+      'HomeSigned': const HomeSignedWidget(),
+      'Message': const MessageWidget(),
+      'HomeNot_Signed': const HomeNotSignedWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -149,39 +148,39 @@ class _NavBarPageState extends State<NavBarPage> {
           _currentPageName = tabs.keys.toList()[i];
         }),
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        selectedItemColor: FlutterFlowTheme.of(context).secondary,
-        unselectedItemColor: FlutterFlowTheme.of(context).primaryText,
-        showSelectedLabels: false,
+        selectedItemColor: FlutterFlowTheme.of(context).accent1,
+        unselectedItemColor: const Color(0x3E000000),
+        showSelectedLabels: true,
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: const FaIcon(
-              FontAwesomeIcons.home,
-              size: 24.0,
+            icon: const Icon(
+              Icons.home_filled,
+              size: 28.0,
             ),
             label: FFLocalizations.of(context).getText(
-              '1oq3jvmz' /* Home */,
+              'ybks9yiv' /* . */,
             ),
             tooltip: '',
           ),
           BottomNavigationBarItem(
             icon: const Icon(
-              Icons.home_outlined,
+              Icons.email_rounded,
               size: 24.0,
             ),
             label: FFLocalizations.of(context).getText(
-              'n30b6nvw' /* Home */,
+              'z6ymo87t' /*  */,
             ),
             tooltip: '',
           ),
           BottomNavigationBarItem(
             icon: const Icon(
-              Icons.home_outlined,
-              size: 24.0,
+              Icons.home_filled,
+              size: 28.0,
             ),
             label: FFLocalizations.of(context).getText(
-              'r4h70cxz' /* Home */,
+              'h25vf7up' /* . */,
             ),
             tooltip: '',
           )

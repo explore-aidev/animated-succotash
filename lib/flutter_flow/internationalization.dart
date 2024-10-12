@@ -280,200 +280,136 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
   },
-  // Home1
+  // HomeSigned
   {
-    'ak8zm99j': {
-      'en': 'Good Morning,',
+    'duhvbluk': {
+      'en': 'Welcome Back!',
       'ms': '',
     },
-    'gc4jam68': {
-      'en': 'Summary of your weekly brews',
+    '22g6q6yh': {
+      'en': 'Emil Alvaro',
       'ms': '',
     },
-    'axtxz9f1': {
-      'en': 'Daily Coffees',
+    'flgken5u': {
+      'en': 'Search a job position',
       'ms': '',
     },
-    'igv9dyde': {
-      'en': '1',
+    'qv4vhazl': {
+      'en': 'Featured Jobs',
       'ms': '',
     },
-    'j890jleb': {
-      'en': 'Avg. Rating',
+    '3m29rd6x': {
+      'en': 'See all',
       'ms': '',
     },
-    'tftk4p6p': {
-      'en': '4.6',
+    '91d0ae62': {
+      'en': 'No-Code Platform Design',
       'ms': '',
     },
-    'gdnx6soh': {
-      'en': 'Daily Lessons',
+    'l9sxq811': {
+      'en': '12 Projects',
       'ms': '',
     },
-    '4x680070': {
-      'en': 'How to pour Latte Art',
+    'sgf9yvk9': {
+      'en': '30%',
       'ms': '',
     },
-    'nn3cjxsk': {
-      'en': 'A wonderfully delicious 2 patty melt that melts into your...',
-      'ms': '',
-    },
-    'tu0x3tdu': {
-      'en': '2m',
-      'ms': '',
-    },
-    'hmcgjc3y': {
-      'en': 'How to brew coffee',
-      'ms': '',
-    },
-    '6labbivl': {
-      'en': 'Learn how to brew a delicious pourover every morning.',
-      'ms': '',
-    },
-    'ufxw0sej': {
-      'en': '2m',
-      'ms': '',
-    },
-    's9l1em1y': {
-      'en': 'Your latest coffee',
-      'ms': '',
-    },
-    's5qvxzi0': {
-      'en': 'Ethiopian Natural',
-      'ms': '',
-    },
-    'czohd7tz': {
-      'en': 'Meters',
-      'ms': '',
-    },
-    'ini8egkl': {
-      'en': 'Process',
-      'ms': '',
-    },
-    '4butjq4w': {
-      'en': 'Region',
-      'ms': '',
-    },
-    '2i10egd2': {
-      'en': '1,850',
-      'ms': '',
-    },
-    '7vsij7ky': {
-      'en': 'Washed',
-      'ms': '',
-    },
-    '6gpo9p67': {
-      'en': 'Guji',
-      'ms': '',
-    },
-    '8emmsz0q': {
-      'en': 'Home',
-      'ms': '',
-    },
-    'n30b6nvw': {
-      'en': 'Home',
+    'ybks9yiv': {
+      'en': '.',
       'ms': '',
     },
   },
-  // Home2
+  // Message
   {
-    'imnwgk1f': {
-      'en': 'Good Morning,',
+    'nign919w': {
+      'en': 'Welcome Back!',
       'ms': '',
     },
-    'geijejj2': {
-      'en': 'Summary of your weekly brews',
+    'zviz4fgz': {
+      'en': 'Guest User',
       'ms': '',
     },
-    'm4rebagn': {
-      'en': 'Daily Coffees',
+    'g7fc1fgu': {
+      'en': 'Find your task...',
       'ms': '',
     },
-    '5koncwqo': {
-      'en': '1',
+    '11bzs3b3': {
+      'en': 'Featured Jobs',
       'ms': '',
     },
-    'yjjaklvm': {
-      'en': 'Avg. Rating',
+    'wqnkr0h8': {
+      'en': 'See all',
       'ms': '',
     },
-    '6vthbly3': {
-      'en': '4.6',
+    'fb3umhw1': {
+      'en': 'No-Code Platform Design',
       'ms': '',
     },
-    'thj1ox6n': {
-      'en': 'Daily Lessons',
+    'npvckg85': {
+      'en': '12 Projects',
       'ms': '',
     },
-    '9cbhzkw9': {
-      'en': 'How to pour Latte Art',
+    'ki4sjnrm': {
+      'en': '30%',
       'ms': '',
     },
-    'h778rnly': {
-      'en': 'A wonderfully delicious 2 patty melt that melts into your...',
-      'ms': '',
-    },
-    'wsqj5ath': {
-      'en': '2m',
-      'ms': '',
-    },
-    'ru75yw6q': {
-      'en': 'How to brew coffee',
-      'ms': '',
-    },
-    'gbdkbbd8': {
-      'en': 'Learn how to brew a delicious pourover every morning.',
-      'ms': '',
-    },
-    'fqsd88qs': {
-      'en': '2m',
-      'ms': '',
-    },
-    'bqupk4et': {
-      'en': 'Your latest coffee',
-      'ms': '',
-    },
-    '8x3sfayd': {
-      'en': 'Ethiopian Natural',
-      'ms': '',
-    },
-    'r9r5h5lz': {
-      'en': 'Meters',
-      'ms': '',
-    },
-    'r24ij7tv': {
-      'en': 'Process',
-      'ms': '',
-    },
-    'qf0u7hqn': {
-      'en': 'Region',
-      'ms': '',
-    },
-    '3ez07rol': {
-      'en': '1,850',
-      'ms': '',
-    },
-    'aavit2vj': {
-      'en': 'Washed',
-      'ms': '',
-    },
-    'uj22y0ug': {
-      'en': 'Guji',
-      'ms': '',
-    },
-    'jr1bqwlb': {
-      'en': 'Home',
-      'ms': '',
-    },
-    'r4h70cxz': {
-      'en': 'Home',
+    'z6ymo87t': {
+      'en': '',
       'ms': '',
     },
   },
-  // Homepage
+  // HomeNot_Signed
   {
-    '1oq3jvmz': {
-      'en': 'Home',
+    'yrns7k2x': {
+      'en': 'Welcome Back!',
+      'ms': '',
+    },
+    'ffnhpj2l': {
+      'en': 'Guest User',
+      'ms': '',
+    },
+    'rd0gw69v': {
+      'en': 'Search a job position',
+      'ms': '',
+    },
+    'himawljy': {
+      'en': 'Featured Jobs',
+      'ms': '',
+    },
+    '5fupcf02': {
+      'en': 'See all',
+      'ms': '',
+    },
+    'js4knl1d': {
+      'en': 'Job offer title',
+      'ms': '',
+    },
+    'f7skdwo3': {
+      'en': '12 Projects',
+      'ms': '',
+    },
+    'rh71ytm5': {
+      'en': '30%',
+      'ms': '',
+    },
+    'kdjvw0z5': {
+      'en': 'Recomended Jobs',
+      'ms': '',
+    },
+    'ksjr73s0': {
+      'en': 'See all',
+      'ms': '',
+    },
+    'vupsneqt': {
+      'en': 'No-Code\nPlatform',
+      'ms': '',
+    },
+    'i7muxf1g': {
+      'en': '12 Projects',
+      'ms': '',
+    },
+    'h25vf7up': {
+      'en': '.',
       'ms': '',
     },
   },

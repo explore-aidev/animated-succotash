@@ -112,23 +112,25 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const LoginWidget(),
         ),
         FFRoute(
-          name: 'Home1',
-          path: '/home1',
-          builder: (context, params) =>
-              params.isEmpty ? const NavBarPage(initialPage: 'Home1') : const Home1Widget(),
-        ),
-        FFRoute(
-          name: 'Home2',
-          path: '/home2',
-          builder: (context, params) =>
-              params.isEmpty ? const NavBarPage(initialPage: 'Home2') : const Home2Widget(),
-        ),
-        FFRoute(
-          name: 'Homepage',
-          path: '/homepage',
+          name: 'HomeSigned',
+          path: '/homeSigned',
           builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'Homepage')
-              : const HomepageWidget(),
+              ? const NavBarPage(initialPage: 'HomeSigned')
+              : const HomeSignedWidget(),
+        ),
+        FFRoute(
+          name: 'Message',
+          path: '/message',
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'Message')
+              : const MessageWidget(),
+        ),
+        FFRoute(
+          name: 'HomeNot_Signed',
+          path: '/homeNotSigned',
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'HomeNot_Signed')
+              : const HomeNotSignedWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

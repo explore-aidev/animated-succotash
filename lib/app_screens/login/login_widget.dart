@@ -427,7 +427,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                   return;
                                                 }
 
-                                                context.goNamedAuth('Homepage',
+                                                context.pushNamedAuth(
+                                                    'HomeSigned',
                                                     context.mounted);
                                               },
                                               text: FFLocalizations.of(context)
@@ -592,8 +593,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 return;
                                               }
 
-                                              context.goNamedAuth(
-                                                  'Homepage', context.mounted);
+                                              context.goNamedAuth('HomeSigned',
+                                                  context.mounted);
                                             },
                                             child: Container(
                                               width: 25.0,
