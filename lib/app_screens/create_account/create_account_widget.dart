@@ -1,9 +1,11 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
+import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'create_account_model.dart';
 export 'create_account_model.dart';
@@ -15,10 +17,13 @@ class CreateAccountWidget extends StatefulWidget {
   State<CreateAccountWidget> createState() => _CreateAccountWidgetState();
 }
 
-class _CreateAccountWidgetState extends State<CreateAccountWidget> {
+class _CreateAccountWidgetState extends State<CreateAccountWidget>
+    with TickerProviderStateMixin {
   late CreateAccountModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  final animationsMap = <String, AnimationInfo>{};
 
   @override
   void initState() {
@@ -36,6 +41,21 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
 
     _model.passwordConfirmTextController ??= TextEditingController();
     _model.passwordConfirmFocusNode ??= FocusNode();
+
+    animationsMap.addAll({
+      'imageOnPageLoadAnimation': AnimationInfo(
+        trigger: AnimationTrigger.onPageLoad,
+        effectsBuilder: () => [
+          MoveEffect(
+            curve: Curves.easeInOut,
+            delay: 0.0.ms,
+            duration: 600.0.ms,
+            begin: const Offset(0.0, 0.0),
+            end: const Offset(0.0, 0.0),
+          ),
+        ],
+      ),
+    });
 
     WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
@@ -93,7 +113,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                             alignment: const AlignmentDirectional(-1.0, 0.0),
                             child: Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
-                                  20.0, 0.0, 20.0, 0.0),
+                                  16.0, 0.0, 16.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.start,
@@ -131,7 +151,8 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                         height: 200.0,
                                         fit: BoxFit.contain,
                                       ),
-                                    ),
+                                    ).animateOnPageLoad(animationsMap[
+                                        'imageOnPageLoadAnimation']!),
                                   ),
                                 ],
                               ),
@@ -140,7 +161,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                           Align(
                             alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: const EdgeInsets.all(20.0),
+                              padding: const EdgeInsets.all(16.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -225,7 +246,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -235,7 +256,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           errorBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -245,7 +266,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           focusedErrorBorder:
                                               OutlineInputBorder(
@@ -256,7 +277,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           filled: true,
                                           fillColor:
@@ -324,7 +345,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -334,7 +355,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           errorBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -344,7 +365,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           focusedErrorBorder:
                                               OutlineInputBorder(
@@ -355,7 +376,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           filled: true,
                                           fillColor:
@@ -424,7 +445,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -434,7 +455,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           errorBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -444,7 +465,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           focusedErrorBorder:
                                               OutlineInputBorder(
@@ -455,7 +476,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           filled: true,
                                           fillColor:
@@ -542,7 +563,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -552,7 +573,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           errorBorder: OutlineInputBorder(
                                             borderSide: BorderSide(
@@ -562,7 +583,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           focusedErrorBorder:
                                               OutlineInputBorder(
@@ -573,7 +594,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                               width: 2.0,
                                             ),
                                             borderRadius:
-                                                BorderRadius.circular(4.0),
+                                                BorderRadius.circular(10.0),
                                           ),
                                           filled: true,
                                           fillColor:
@@ -626,115 +647,128 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     child: Padding(
                                       padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 0.0, 0.0),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.center,
-                                        children: [
-                                          Container(
-                                            decoration: const BoxDecoration(),
-                                            child: FFButtonWidget(
-                                              onPressed: () async {
-                                                GoRouter.of(context)
-                                                    .prepareAuthEvent();
-                                                if (_model
-                                                        .passwordTextController
-                                                        .text !=
-                                                    _model
-                                                        .passwordConfirmTextController
-                                                        .text) {
-                                                  ScaffoldMessenger.of(context)
-                                                      .showSnackBar(
-                                                    const SnackBar(
-                                                      content: Text(
-                                                        'Passwords don\'t match!',
-                                                      ),
-                                                    ),
-                                                  );
-                                                  return;
-                                                }
-
-                                                final user = await authManager
-                                                    .createAccountWithEmail(
-                                                  context,
-                                                  _model.fullNameTextController
-                                                      .text,
-                                                  _model.passwordTextController
-                                                      .text,
-                                                );
-                                                if (user == null) {
-                                                  return;
-                                                }
-
-                                                await UsersRecord.collection
-                                                    .doc(user.uid)
-                                                    .update(
-                                                        createUsersRecordData(
-                                                      displayName: _model
-                                                          .fullNameTextController
-                                                          .text,
-                                                    ));
-
-                                                context.pushNamedAuth(
-                                                    'HomeNot_Signed',
-                                                    context.mounted);
-                                              },
-                                              text: FFLocalizations.of(context)
-                                                  .getText(
-                                                '3s2qd0jw' /* Register */,
-                                              ),
-                                              options: FFButtonOptions(
-                                                width: 350.0,
-                                                height: 56.0,
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 0.0, 0.0, 0.0),
-                                                iconPadding:
-                                                    const EdgeInsetsDirectional
-                                                        .fromSTEB(
-                                                            0.0, 0.0, 0.0, 0.0),
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primary,
-                                                textStyle:
-                                                    FlutterFlowTheme.of(context)
-                                                        .titleSmall
-                                                        .override(
-                                                          fontFamily:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .titleSmallFamily,
-                                                          color: Colors.white,
-                                                          letterSpacing: 0.0,
-                                                          fontWeight:
-                                                              FontWeight.normal,
-                                                          useGoogleFonts: GoogleFonts
-                                                                  .asMap()
-                                                              .containsKey(
-                                                                  FlutterFlowTheme.of(
-                                                                          context)
-                                                                      .titleSmallFamily),
+                                      child: SingleChildScrollView(
+                                        scrollDirection: Axis.horizontal,
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: [
+                                            Container(
+                                              decoration: const BoxDecoration(),
+                                              child: FFButtonWidget(
+                                                onPressed: () async {
+                                                  GoRouter.of(context)
+                                                      .prepareAuthEvent();
+                                                  if (_model
+                                                          .passwordTextController
+                                                          .text !=
+                                                      _model
+                                                          .passwordConfirmTextController
+                                                          .text) {
+                                                    ScaffoldMessenger.of(
+                                                            context)
+                                                        .showSnackBar(
+                                                      const SnackBar(
+                                                        content: Text(
+                                                          'Passwords don\'t match!',
                                                         ),
-                                                elevation: 3.0,
-                                                borderSide: const BorderSide(
-                                                  color: Colors.transparent,
-                                                  width: 1.0,
+                                                      ),
+                                                    );
+                                                    return;
+                                                  }
+
+                                                  final user = await authManager
+                                                      .createAccountWithEmail(
+                                                    context,
+                                                    _model
+                                                        .emailAddressTextController
+                                                        .text,
+                                                    _model
+                                                        .passwordTextController
+                                                        .text,
+                                                  );
+                                                  if (user == null) {
+                                                    return;
+                                                  }
+
+                                                  await UsersRecord.collection
+                                                      .doc(user.uid)
+                                                      .update(
+                                                          createUsersRecordData(
+                                                        displayName:
+                                                            valueOrDefault<
+                                                                String>(
+                                                          _model
+                                                              .fullNameTextController
+                                                              .text,
+                                                          'Guest User',
+                                                        ),
+                                                        email: _model
+                                                            .emailAddressTextController
+                                                            .text,
+                                                        photoUrl:
+                                                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/explore-job-oqjfr3/assets/vcqv4pavdv45/images.png',
+                                                        createdTime:
+                                                            getCurrentTimestamp,
+                                                      ));
+
+                                                  context.pushNamedAuth(
+                                                      'HomeSigned',
+                                                      context.mounted);
+                                                },
+                                                text:
+                                                    FFLocalizations.of(context)
+                                                        .getText(
+                                                  '3s2qd0jw' /* Register */,
                                                 ),
-                                                borderRadius: const BorderRadius.only(
-                                                  bottomLeft:
-                                                      Radius.circular(4.0),
-                                                  bottomRight:
-                                                      Radius.circular(4.0),
-                                                  topLeft: Radius.circular(4.0),
-                                                  topRight:
-                                                      Radius.circular(4.0),
+                                                options: FFButtonOptions(
+                                                  width: 357.0,
+                                                  height: 60.0,
+                                                  padding: const EdgeInsetsDirectional
+                                                      .fromSTEB(
+                                                          0.0, 0.0, 0.0, 0.0),
+                                                  iconPadding:
+                                                      const EdgeInsetsDirectional
+                                                          .fromSTEB(0.0, 0.0,
+                                                              0.0, 0.0),
+                                                  color: FlutterFlowTheme.of(
+                                                          context)
+                                                      .primary,
+                                                  textStyle: FlutterFlowTheme
+                                                          .of(context)
+                                                      .titleSmall
+                                                      .override(
+                                                        fontFamily:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .titleSmallFamily,
+                                                        color: Colors.white,
+                                                        letterSpacing: 0.0,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                        useGoogleFonts: GoogleFonts
+                                                                .asMap()
+                                                            .containsKey(
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .titleSmallFamily),
+                                                      ),
+                                                  elevation: 8.0,
+                                                  borderSide: const BorderSide(
+                                                    color: Colors.transparent,
+                                                    width: 1.0,
+                                                  ),
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          12.0),
                                                 ),
                                               ),
                                             ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),

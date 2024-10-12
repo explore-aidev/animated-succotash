@@ -108,7 +108,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // Onboarding1
   {
     '7j5n9yqe': {
-      'en': 'Explore jobs list',
+      'en': 'Look & choose from Job Listings',
       'ms': '',
     },
     '1nz8vl2a': {
@@ -177,8 +177,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': ' Submit applications in seconds.',
       'ms': '',
     },
-    'hghlamc1': {
-      'en': 'Create Account',
+    'lvv4zc80': {
+      'en': 'Explore now',
       'ms': '',
     },
     'b0ucjijp': {
@@ -280,96 +280,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
   },
-  // HomeSigned
-  {
-    'duhvbluk': {
-      'en': 'Welcome Back!',
-      'ms': '',
-    },
-    '22g6q6yh': {
-      'en': 'Emil Alvaro',
-      'ms': '',
-    },
-    'flgken5u': {
-      'en': 'Search a job position',
-      'ms': '',
-    },
-    'qv4vhazl': {
-      'en': 'Featured Jobs',
-      'ms': '',
-    },
-    '3m29rd6x': {
-      'en': 'See all',
-      'ms': '',
-    },
-    '91d0ae62': {
-      'en': 'No-Code Platform Design',
-      'ms': '',
-    },
-    'l9sxq811': {
-      'en': '12 Projects',
-      'ms': '',
-    },
-    'sgf9yvk9': {
-      'en': '30%',
-      'ms': '',
-    },
-    'ybks9yiv': {
-      'en': '.',
-      'ms': '',
-    },
-  },
-  // Message
-  {
-    'nign919w': {
-      'en': 'Welcome Back!',
-      'ms': '',
-    },
-    'zviz4fgz': {
-      'en': 'Guest User',
-      'ms': '',
-    },
-    'g7fc1fgu': {
-      'en': 'Find your task...',
-      'ms': '',
-    },
-    '11bzs3b3': {
-      'en': 'Featured Jobs',
-      'ms': '',
-    },
-    'wqnkr0h8': {
-      'en': 'See all',
-      'ms': '',
-    },
-    'fb3umhw1': {
-      'en': 'No-Code Platform Design',
-      'ms': '',
-    },
-    'npvckg85': {
-      'en': '12 Projects',
-      'ms': '',
-    },
-    'ki4sjnrm': {
-      'en': '30%',
-      'ms': '',
-    },
-    'z6ymo87t': {
-      'en': '',
-      'ms': '',
-    },
-  },
   // HomeNot_Signed
   {
     'yrns7k2x': {
       'en': 'Welcome Back!',
       'ms': '',
     },
-    'ffnhpj2l': {
-      'en': 'Guest User',
-      'ms': '',
-    },
     'rd0gw69v': {
-      'en': 'Search a job position',
+      'en': 'Search & Explore jobs!',
       'ms': '',
     },
     'himawljy': {
@@ -380,16 +298,24 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'See all',
       'ms': '',
     },
-    'js4knl1d': {
-      'en': 'Job offer title',
+    'f2cvwxaj': {
+      'en': 'Full Stack Flutter',
       'ms': '',
     },
-    'f7skdwo3': {
-      'en': '12 Projects',
+    'xfto1bq4': {
+      'en': 'AitekPH',
       'ms': '',
     },
-    'rh71ytm5': {
-      'en': '30%',
+    'gd7i9is4': {
+      'en': 'Design',
+      'ms': '',
+    },
+    'k6v69n69': {
+      'en': 'Design',
+      'ms': '',
+    },
+    '31ls7qcw': {
+      'en': 'Design',
       'ms': '',
     },
     'kdjvw0z5': {
@@ -409,6 +335,65 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
     'h25vf7up': {
+      'en': '.',
+      'ms': '',
+    },
+  },
+  // HomeSigned
+  {
+    'zi2jfkzn': {
+      'en': 'Welcome Back!',
+      'ms': '',
+    },
+    'xo25nrfj': {
+      'en': 'Search & Explore jobs!',
+      'ms': '',
+    },
+    'hqv3n92l': {
+      'en': 'Featured Jobs',
+      'ms': '',
+    },
+    'wrjj14aj': {
+      'en': 'See all',
+      'ms': '',
+    },
+    'divgijxa': {
+      'en': 'Full Stack Flutter',
+      'ms': '',
+    },
+    'n8auhhzg': {
+      'en': 'AitekPH',
+      'ms': '',
+    },
+    'z1k0kbru': {
+      'en': 'Design',
+      'ms': '',
+    },
+    '8ufbhgqm': {
+      'en': 'Design',
+      'ms': '',
+    },
+    'nb3fa1cn': {
+      'en': 'Design',
+      'ms': '',
+    },
+    '7rznb85p': {
+      'en': 'Recomended Jobs',
+      'ms': '',
+    },
+    'vks0hk2m': {
+      'en': 'See all',
+      'ms': '',
+    },
+    'bcdg50eo': {
+      'en': 'No-Code\nPlatform',
+      'ms': '',
+    },
+    'chzejtgt': {
+      'en': '12 Projects',
+      'ms': '',
+    },
+    'e7aeqpr3': {
       'en': '.',
       'ms': '',
     },

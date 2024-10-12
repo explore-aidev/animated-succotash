@@ -133,9 +133,8 @@ class _NavBarPageState extends State<NavBarPage> {
   @override
   Widget build(BuildContext context) {
     final tabs = {
-      'HomeSigned': const HomeSignedWidget(),
-      'Message': const MessageWidget(),
       'HomeNot_Signed': const HomeNotSignedWidget(),
+      'HomeSigned': const HomeSignedWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -160,17 +159,7 @@ class _NavBarPageState extends State<NavBarPage> {
               size: 28.0,
             ),
             label: FFLocalizations.of(context).getText(
-              'ybks9yiv' /* . */,
-            ),
-            tooltip: '',
-          ),
-          BottomNavigationBarItem(
-            icon: const Icon(
-              Icons.email_rounded,
-              size: 24.0,
-            ),
-            label: FFLocalizations.of(context).getText(
-              'z6ymo87t' /*  */,
+              'h25vf7up' /* . */,
             ),
             tooltip: '',
           ),
@@ -180,7 +169,7 @@ class _NavBarPageState extends State<NavBarPage> {
               size: 28.0,
             ),
             label: FFLocalizations.of(context).getText(
-              'h25vf7up' /* . */,
+              'e7aeqpr3' /* . */,
             ),
             tooltip: '',
           )

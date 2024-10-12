@@ -1,3 +1,4 @@
+import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -181,14 +182,14 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                           children: [
                             Text(
                               FFLocalizations.of(context).getText(
-                                '7j5n9yqe' /* Explore jobs list */,
+                                '7j5n9yqe' /* Look & choose from Job Listing... */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
                                     fontFamily: FlutterFlowTheme.of(context)
                                         .bodyMediumFamily,
-                                    fontSize: 22.0,
+                                    fontSize: 20.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     useGoogleFonts: GoogleFonts.asMap()
@@ -225,7 +226,7 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                     ),
                     Padding(
                       padding:
-                          const EdgeInsetsDirectional.fromSTEB(20.0, 25.0, 20.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 25.0, 0.0, 0.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -258,29 +259,56 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                         decoration: const BoxDecoration(),
                         child: Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
-                              12.0, 35.0, 12.0, 0.0),
+                              0.0, 35.0, 0.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Container(
-                                decoration: const BoxDecoration(),
-                                child: Text(
-                                  FFLocalizations.of(context).getText(
-                                    'ovoppalh' /* Skip */,
-                                  ),
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyMedium
-                                      .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .bodyMediumFamily,
-                                        fontSize: 16.0,
-                                        letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .bodyMediumFamily),
+                              InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  GoRouter.of(context).prepareAuthEvent();
+                                  final user = await authManager
+                                      .signInAnonymously(context);
+                                  if (user == null) {
+                                    return;
+                                  }
+
+                                  context.pushNamedAuth(
+                                    'HomeNot_Signed',
+                                    context.mounted,
+                                    extra: <String, dynamic>{
+                                      kTransitionInfoKey: const TransitionInfo(
+                                        hasTransition: true,
+                                        transitionType:
+                                            PageTransitionType.bottomToTop,
                                       ),
+                                    },
+                                  );
+                                },
+                                child: Container(
+                                  decoration: const BoxDecoration(),
+                                  child: Text(
+                                    FFLocalizations.of(context).getText(
+                                      'ovoppalh' /* Skip */,
+                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMediumFamily,
+                                          fontSize: 16.0,
+                                          letterSpacing: 0.0,
+                                          useGoogleFonts: GoogleFonts.asMap()
+                                              .containsKey(
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMediumFamily),
+                                        ),
+                                  ),
                                 ),
                               ),
                               FFButtonWidget(
@@ -292,7 +320,7 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                                 ),
                                 options: FFButtonOptions(
                                   width: 164.0,
-                                  height: 50.0,
+                                  height: 55.0,
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 16.0, 0.0),
                                   iconPadding: const EdgeInsetsDirectional.fromSTEB(
@@ -311,12 +339,7 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                                                     .titleSmallFamily),
                                       ),
                                   elevation: 4.0,
-                                  borderRadius: const BorderRadius.only(
-                                    bottomLeft: Radius.circular(4.0),
-                                    bottomRight: Radius.circular(4.0),
-                                    topLeft: Radius.circular(4.0),
-                                    topRight: Radius.circular(4.0),
-                                  ),
+                                  borderRadius: BorderRadius.circular(14.0),
                                 ),
                               ),
                             ],
