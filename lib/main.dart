@@ -135,6 +135,7 @@ class _NavBarPageState extends State<NavBarPage> {
     final tabs = {
       'HomeNot_Signed': const HomeNotSignedWidget(),
       'HomeSigned': const HomeSignedWidget(),
+      'Home': const HomeWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -170,6 +171,16 @@ class _NavBarPageState extends State<NavBarPage> {
             ),
             label: FFLocalizations.of(context).getText(
               'e7aeqpr3' /* . */,
+            ),
+            tooltip: '',
+          ),
+          BottomNavigationBarItem(
+            icon: const Icon(
+              Icons.home_filled,
+              size: 28.0,
+            ),
+            label: FFLocalizations.of(context).getText(
+              '0snel6tp' /* . */,
             ),
             tooltip: '',
           )

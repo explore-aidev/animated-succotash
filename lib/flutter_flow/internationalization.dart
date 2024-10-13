@@ -390,6 +390,53 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
   },
+  // Home
+  {
+    'fywz1upg': {
+      'en': 'Welcome back!',
+      'ms': '',
+    },
+    'tld61fua': {
+      'en': 'Search & Explore jobs!',
+      'ms': '',
+    },
+    'kfh8b3xr': {
+      'en': 'Featured Jobs',
+      'ms': '',
+    },
+    'lsqy7o4j': {
+      'en': 'See all',
+      'ms': '',
+    },
+    '7psyezm6': {
+      'en': 'Design',
+      'ms': '',
+    },
+    '0pwalgyt': {
+      'en': 'Fulltime',
+      'ms': '',
+    },
+    'a1fycmcq': {
+      'en': 'Junior',
+      'ms': '',
+    },
+    'telp7jxi': {
+      'en': 'Recomended Jobs',
+      'ms': '',
+    },
+    'wvoktgsq': {
+      'en': 'See all',
+      'ms': '',
+    },
+    'sxcxwscz': {
+      'en': 'RM 15,000/M',
+      'ms': '',
+    },
+    '0snel6tp': {
+      'en': '.',
+      'ms': '',
+    },
+  },
   // Miscellaneous
   {
     'bngx9uki': {

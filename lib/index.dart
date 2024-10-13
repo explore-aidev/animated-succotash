@@ -10,3 +10,4 @@ export '/app_screens/create_account/create_account_widget.dart'
 export '/app_screens/login/login_widget.dart' show LoginWidget;
 export '/home_not_signed/home_not_signed_widget.dart' show HomeNotSignedWidget;
 export '/home_signed/home_signed_widget.dart' show HomeSignedWidget;
+export '/home/home_widget.dart' show HomeWidget;
