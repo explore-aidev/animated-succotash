@@ -1,4 +1,3 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -270,24 +269,7 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                                 hoverColor: Colors.transparent,
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
-                                  GoRouter.of(context).prepareAuthEvent();
-                                  final user = await authManager
-                                      .signInAnonymously(context);
-                                  if (user == null) {
-                                    return;
-                                  }
-
-                                  context.pushNamedAuth(
-                                    'HomeNot_Signed',
-                                    context.mounted,
-                                    extra: <String, dynamic>{
-                                      kTransitionInfoKey: const TransitionInfo(
-                                        hasTransition: true,
-                                        transitionType:
-                                            PageTransitionType.bottomToTop,
-                                      ),
-                                    },
-                                  );
+                                  context.pushNamed('HomeNot_Signed');
                                 },
                                 child: Container(
                                   decoration: const BoxDecoration(),

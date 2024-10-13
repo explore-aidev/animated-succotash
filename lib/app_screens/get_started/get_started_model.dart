@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'start_widget.dart' show StartWidget;
+import 'get_started_widget.dart' show GetStartedWidget;
 import 'package:flutter/material.dart';
 
-class StartModel extends FlutterFlowModel<StartWidget> {
+class GetStartedModel extends FlutterFlowModel<GetStartedWidget> {
   @override
   void initState(BuildContext context) {}
 

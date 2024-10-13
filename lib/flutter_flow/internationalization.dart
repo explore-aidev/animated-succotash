@@ -167,7 +167,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
   },
-  // Start
+  // GetStarted
   {
     'yug63vjy': {
       'en': 'Explore your dream job',
@@ -178,7 +178,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
     'lvv4zc80': {
-      'en': 'Explore now',
+      'en': 'Create Account',
       'ms': '',
     },
     'b0ucjijp': {

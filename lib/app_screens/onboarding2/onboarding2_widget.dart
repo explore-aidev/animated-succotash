@@ -306,7 +306,7 @@ class _Onboarding2WidgetState extends State<Onboarding2Widget>
                               FFButtonWidget(
                                 onPressed: () async {
                                   context.pushNamed(
-                                    'Start',
+                                    'GetStarted',
                                     extra: <String, dynamic>{
                                       kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,

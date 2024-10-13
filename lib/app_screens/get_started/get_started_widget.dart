@@ -4,19 +4,19 @@ import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'start_model.dart';
-export 'start_model.dart';
+import 'get_started_model.dart';
+export 'get_started_model.dart';
 
-class StartWidget extends StatefulWidget {
-  const StartWidget({super.key});
+class GetStartedWidget extends StatefulWidget {
+  const GetStartedWidget({super.key});
 
   @override
-  State<StartWidget> createState() => _StartWidgetState();
+  State<GetStartedWidget> createState() => _GetStartedWidgetState();
 }
 
-class _StartWidgetState extends State<StartWidget>
+class _GetStartedWidgetState extends State<GetStartedWidget>
     with TickerProviderStateMixin {
-  late StartModel _model;
+  late GetStartedModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -25,7 +25,7 @@ class _StartWidgetState extends State<StartWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => StartModel());
+    _model = createModel(context, () => GetStartedModel());
 
     animationsMap.addAll({
       'imageOnPageLoadAnimation': AnimationInfo(
@@ -251,7 +251,7 @@ class _StartWidgetState extends State<StartWidget>
                                     highlightColor: Colors.transparent,
                                     onTap: () async {
                                       context.pushNamed(
-                                        'HomeNot_Signed',
+                                        'CreateAccount',
                                         extra: <String, dynamic>{
                                           kTransitionInfoKey: const TransitionInfo(
                                             hasTransition: true,
@@ -268,7 +268,7 @@ class _StartWidgetState extends State<StartWidget>
                                       children: [
                                         Text(
                                           FFLocalizations.of(context).getText(
-                                            'lvv4zc80' /* Explore now */,
+                                            'lvv4zc80' /* Create Account */,
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
