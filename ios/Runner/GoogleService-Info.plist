@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>88083005117-ga036bck9nfutdfda5d382a7r8a0u379.apps.googleusercontent.com</string>
+	<string>848884821122-0upsps6403vqce6dcetq3ughd023r63o.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.88083005117-ga036bck9nfutdfda5d382a7r8a0u379</string>
+	<string>com.googleusercontent.apps.848884821122-0upsps6403vqce6dcetq3ughd023r63o</string>
 	<key>API_KEY</key>
-	<string>AIzaSyD-MjeTWUzHcTh-RcU0BGp01SPcUMcromI</string>
+	<string>AIzaSyDrGnW0b5wQCyZAqswS06gtp_U4dlAHCXA</string>
 	<key>GCM_SENDER_ID</key>
-	<string>88083005117</string>
+	<string>848884821122</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.explorejobs.my</string>
 	<key>PROJECT_ID</key>
-	<string>explore-56pj5q</string>
+	<string>explore-job-oqjfr3</string>
 	<key>STORAGE_BUCKET</key>
-	<string>explore-56pj5q.appspot.com</string>
+	<string>explore-job-oqjfr3.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:88083005117:ios:fb24c08f428bbe0df481d4</string>
+	<string>1:848884821122:ios:fe7772c4469bd37e0d989b</string>
 	<key>DATABASE_URL</key>
-	<string>https://explore-56pj5q-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+	<string>https://explore-job-oqjfr3-default-rtdb.asia-southeast1.firebasedatabase.app</string>
 </dict>
 </plist>

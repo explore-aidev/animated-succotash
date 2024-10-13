@@ -5,12 +5,12 @@ Future initFirebase() async {
   if (kIsWeb) {
     await Firebase.initializeApp(
         options: const FirebaseOptions(
-            apiKey: "AIzaSyBaGoOcIyg35RT-7XC8ihvLcrhoQDMk_8I",
-            authDomain: "explore-56pj5q.firebaseapp.com",
-            projectId: "explore-56pj5q",
-            storageBucket: "explore-56pj5q.appspot.com",
-            messagingSenderId: "88083005117",
-            appId: "1:88083005117:web:a56452fca9aca812f481d4"));
+            apiKey: "AIzaSyBXMKwoJiZwSQ6pFto1kT_c6m6tDfGbsYw",
+            authDomain: "explore-job-oqjfr3.firebaseapp.com",
+            projectId: "explore-job-oqjfr3",
+            storageBucket: "explore-job-oqjfr3.appspot.com",
+            messagingSenderId: "848884821122",
+            appId: "1:848884821122:web:794aa3e4235fb2130d989b"));
   } else {
     await Firebase.initializeApp();
   }

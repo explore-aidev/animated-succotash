@@ -283,7 +283,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // HomeNot_Signed
   {
     'yrns7k2x': {
-      'en': 'Welcome Back!',
+      'en': 'Welcome to Explore Jobs!',
+      'ms': '',
+    },
+    'ffnhpj2l': {
+      'en': 'Guest User',
       'ms': '',
     },
     'rd0gw69v': {
@@ -298,24 +302,16 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'See all',
       'ms': '',
     },
-    'f2cvwxaj': {
-      'en': 'Full Stack Flutter',
-      'ms': '',
-    },
-    'xfto1bq4': {
-      'en': 'AitekPH',
-      'ms': '',
-    },
     'gd7i9is4': {
       'en': 'Design',
       'ms': '',
     },
     'k6v69n69': {
-      'en': 'Design',
+      'en': 'Fulltime',
       'ms': '',
     },
     '31ls7qcw': {
-      'en': 'Design',
+      'en': 'Junior',
       'ms': '',
     },
     'kdjvw0z5': {
@@ -326,12 +322,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'See all',
       'ms': '',
     },
-    'vupsneqt': {
-      'en': 'No-Code\nPlatform',
-      'ms': '',
-    },
     'i7muxf1g': {
-      'en': '12 Projects',
+      'en': 'RM 15,000/M',
       'ms': '',
     },
     'h25vf7up': {

@@ -1,38 +1,38 @@
 {
   "project_info": {
-    "project_number": "88083005117",
-    "firebase_url": "https://explore-56pj5q-default-rtdb.asia-southeast1.firebasedatabase.app",
-    "project_id": "explore-56pj5q",
-    "storage_bucket": "explore-56pj5q.appspot.com"
+    "project_number": "848884821122",
+    "firebase_url": "https://explore-job-oqjfr3-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "explore-job-oqjfr3",
+    "storage_bucket": "explore-job-oqjfr3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:88083005117:android:7b287243b2218babf481d4",
+        "mobilesdk_app_id": "1:848884821122:android:ba840d64a3c6fab60d989b",
         "android_client_info": {
           "package_name": "com.explorejobs.my"
         }
       },
       "oauth_client": [
         {
-          "client_id": "88083005117-4cllsbf4oe3hkafbvfqshk2j9of2in4t.apps.googleusercontent.com",
+          "client_id": "848884821122-i5eva4g5dflh2vvbfjco1ft0ad2a16q2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAH_fBQEoCOzw9YtoX8uxhzmm8eqv_xbsk"
+          "current_key": "AIzaSyCPzk0WwND0h9UaSLzH-iSLFwkq7pZqfuU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "88083005117-4cllsbf4oe3hkafbvfqshk2j9of2in4t.apps.googleusercontent.com",
+              "client_id": "848884821122-i5eva4g5dflh2vvbfjco1ft0ad2a16q2.apps.googleusercontent.com",
               "client_type": 3
             },
             {
-              "client_id": "88083005117-ga036bck9nfutdfda5d382a7r8a0u379.apps.googleusercontent.com",
+              "client_id": "848884821122-0upsps6403vqce6dcetq3ughd023r63o.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
                 "bundle_id": "com.explorejobs.my"

@@ -1,4 +1,3 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -126,7 +125,7 @@ class _HomeNotSignedWidgetState extends State<HomeNotSignedWidget>
                                     0.0, 4.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'yrns7k2x' /* Welcome Back! */,
+                                    'yrns7k2x' /* Welcome to Explore Jobs! */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .labelMedium
@@ -141,25 +140,25 @@ class _HomeNotSignedWidgetState extends State<HomeNotSignedWidget>
                                       ),
                                 ),
                               ),
-                              AuthUserStreamWidget(
-                                builder: (context) => Text(
-                                  '$currentUserDisplayName👋!',
-                                  textAlign: TextAlign.start,
-                                  style: FlutterFlowTheme.of(context)
-                                      .titleLarge
-                                      .override(
-                                        fontFamily: FlutterFlowTheme.of(context)
-                                            .titleLargeFamily,
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryText,
-                                        fontSize: 22.0,
-                                        letterSpacing: 0.0,
-                                        useGoogleFonts: GoogleFonts.asMap()
-                                            .containsKey(
-                                                FlutterFlowTheme.of(context)
-                                                    .titleLargeFamily),
-                                      ),
+                              Text(
+                                FFLocalizations.of(context).getText(
+                                  'ffnhpj2l' /* Guest User */,
                                 ),
+                                textAlign: TextAlign.start,
+                                style: FlutterFlowTheme.of(context)
+                                    .titleLarge
+                                    .override(
+                                      fontFamily: FlutterFlowTheme.of(context)
+                                          .titleLargeFamily,
+                                      color: FlutterFlowTheme.of(context)
+                                          .primaryText,
+                                      fontSize: 22.0,
+                                      letterSpacing: 0.0,
+                                      useGoogleFonts: GoogleFonts.asMap()
+                                          .containsKey(
+                                              FlutterFlowTheme.of(context)
+                                                  .titleLargeFamily),
+                                    ),
                               ),
                             ],
                           ),
@@ -188,18 +187,13 @@ class _HomeNotSignedWidgetState extends State<HomeNotSignedWidget>
                               ),
                               child: Padding(
                                 padding: const EdgeInsets.all(2.0),
-                                child: AuthUserStreamWidget(
-                                  builder: (context) => ClipRRect(
-                                    borderRadius: BorderRadius.circular(40.0),
-                                    child: Image.network(
-                                      valueOrDefault<String>(
-                                        currentUserPhoto,
-                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/explore-job-oqjfr3/assets/vcqv4pavdv45/images.png',
-                                      ),
-                                      width: 40.0,
-                                      height: 40.0,
-                                      fit: BoxFit.cover,
-                                    ),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(40.0),
+                                  child: Image.network(
+                                    'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/explore-job-oqjfr3/assets/vcqv4pavdv45/images.png',
+                                    width: 40.0,
+                                    height: 40.0,
+                                    fit: BoxFit.cover,
                                   ),
                                 ),
                               ),
@@ -386,13 +380,7 @@ class _HomeNotSignedWidgetState extends State<HomeNotSignedWidget>
                                     .primaryBackground,
                               ),
                               child: StreamBuilder<List<JobsRecord>>(
-                                stream: queryJobsRecord(
-                                  queryBuilder: (jobsRecord) =>
-                                      jobsRecord.where(
-                                    'offer_status',
-                                    isEqualTo: 'true',
-                                  ),
-                                ),
+                                stream: queryJobsRecord(),
                                 builder: (context, snapshot) {
                                   // Customize what your widget looks like when it's loading.
                                   if (!snapshot.hasData) {
@@ -506,29 +494,47 @@ class _HomeNotSignedWidgetState extends State<HomeNotSignedWidget>
                                                                           25.0,
                                                                           0.0),
                                                                       child:
-                                                                          Container(
-                                                                        width:
-                                                                            45.0,
-                                                                        height:
-                                                                            45.0,
-                                                                        decoration:
-                                                                            BoxDecoration(
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).primaryBackground,
+                                                                          Material(
+                                                                        color: Colors
+                                                                            .transparent,
+                                                                        elevation:
+                                                                            8.0,
+                                                                        shape:
+                                                                            RoundedRectangleBorder(
                                                                           borderRadius:
                                                                               BorderRadius.circular(12.0),
                                                                         ),
-                                                                        alignment: const AlignmentDirectional(
-                                                                            0.0,
-                                                                            0.0),
                                                                         child:
-                                                                            Icon(
-                                                                          Icons
-                                                                              .desktop_windows,
-                                                                          color:
-                                                                              FlutterFlowTheme.of(context).primaryText,
-                                                                          size:
-                                                                              20.0,
+                                                                            Container(
+                                                                          width:
+                                                                              45.0,
+                                                                          height:
+                                                                              45.0,
+                                                                          decoration:
+                                                                              BoxDecoration(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primaryBackground,
+                                                                            borderRadius:
+                                                                                BorderRadius.circular(12.0),
+                                                                          ),
+                                                                          alignment: const AlignmentDirectional(
+                                                                              0.0,
+                                                                              0.0),
+                                                                          child:
+                                                                              ClipRRect(
+                                                                            borderRadius:
+                                                                                BorderRadius.circular(8.0),
+                                                                            child:
+                                                                                Image.network(
+                                                                              valueOrDefault<String>(
+                                                                                listViewJobsRecord.companyLogo,
+                                                                                'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/explore-job-oqjfr3/assets/13asbrcd7vcn/10001_(45).png',
+                                                                              ),
+                                                                              width: 200.0,
+                                                                              height: 200.0,
+                                                                              fit: BoxFit.cover,
+                                                                            ),
+                                                                          ),
                                                                         ),
                                                                       ),
                                                                     ),
@@ -550,9 +556,7 @@ class _HomeNotSignedWidgetState extends State<HomeNotSignedWidget>
                                                                                 MainAxisSize.max,
                                                                             children: [
                                                                               Text(
-                                                                                FFLocalizations.of(context).getText(
-                                                                                  'f2cvwxaj' /* Full Stack Flutter */,
-                                                                                ),
+                                                                                listViewJobsRecord.jobOffer,
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                                       color: FlutterFlowTheme.of(context).primaryBackground,
@@ -569,9 +573,7 @@ class _HomeNotSignedWidgetState extends State<HomeNotSignedWidget>
                                                                                 MainAxisSize.max,
                                                                             children: [
                                                                               Text(
-                                                                                FFLocalizations.of(context).getText(
-                                                                                  'xfto1bq4' /* AitekPH */,
-                                                                                ),
+                                                                                listViewJobsRecord.company,
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                                       color: FlutterFlowTheme.of(context).primaryBackground,
@@ -696,11 +698,11 @@ class _HomeNotSignedWidgetState extends State<HomeNotSignedWidget>
                                                               text: FFLocalizations
                                                                       .of(context)
                                                                   .getText(
-                                                                'k6v69n69' /* Design */,
+                                                                'k6v69n69' /* Fulltime */,
                                                               ),
                                                               options:
                                                                   FFButtonOptions(
-                                                                width: 75.0,
+                                                                width: 81.0,
                                                                 height: 28.0,
                                                                 padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
@@ -761,7 +763,7 @@ class _HomeNotSignedWidgetState extends State<HomeNotSignedWidget>
                                                               text: FFLocalizations
                                                                       .of(context)
                                                                   .getText(
-                                                                '31ls7qcw' /* Design */,
+                                                                '31ls7qcw' /* Junior */,
                                                               ),
                                                               options:
                                                                   FFButtonOptions(
@@ -824,10 +826,10 @@ class _HomeNotSignedWidgetState extends State<HomeNotSignedWidget>
                                                     ),
                                                   ),
                                                 ),
-                                                const Padding(
-                                                  padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          12.0, 0.0, 12.0, 0.0),
+                                                Padding(
+                                                  padding: const EdgeInsetsDirectional
+                                                      .fromSTEB(12.0, 12.0,
+                                                          12.0, 0.0),
                                                   child: Row(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -835,14 +837,50 @@ class _HomeNotSignedWidgetState extends State<HomeNotSignedWidget>
                                                         MainAxisAlignment
                                                             .spaceBetween,
                                                     children: [
-                                                      SizedBox(
-                                                        width: 150.0,
-                                                        child: Stack(
-                                                          alignment:
-                                                              AlignmentDirectional(
-                                                                  -1.0, 0.0),
-                                                          children: [],
-                                                        ),
+                                                      Text(
+                                                        'RM ${listViewJobsRecord.salary}/Month',
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMediumFamily,
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryBackground,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .bodyMediumFamily),
+                                                                ),
+                                                      ),
+                                                      Text(
+                                                        listViewJobsRecord
+                                                            .location,
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMediumFamily,
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .secondaryBackground,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                  useGoogleFonts: GoogleFonts
+                                                                          .asMap()
+                                                                      .containsKey(
+                                                                          FlutterFlowTheme.of(context)
+                                                                              .bodyMediumFamily),
+                                                                ),
                                                       ),
                                                     ],
                                                   ),
@@ -928,13 +966,7 @@ class _HomeNotSignedWidgetState extends State<HomeNotSignedWidget>
                                     .primaryBackground,
                               ),
                               child: StreamBuilder<List<JobsRecord>>(
-                                stream: queryJobsRecord(
-                                  queryBuilder: (jobsRecord) =>
-                                      jobsRecord.where(
-                                    'offer_status',
-                                    isEqualTo: 'true',
-                                  ),
-                                ),
+                                stream: queryJobsRecord(),
                                 builder: (context, snapshot) {
                                   // Customize what your widget looks like when it's loading.
                                   if (!snapshot.hasData) {
@@ -1027,7 +1059,7 @@ class _HomeNotSignedWidgetState extends State<HomeNotSignedWidget>
                                                     ),
                                                     child: Container(
                                                       width: 184.0,
-                                                      height: 170.0,
+                                                      height: 161.0,
                                                       decoration: BoxDecoration(
                                                         color: FlutterFlowTheme
                                                                 .of(context)
@@ -1061,33 +1093,51 @@ class _HomeNotSignedWidgetState extends State<HomeNotSignedWidget>
                                                               CrossAxisAlignment
                                                                   .center,
                                                           children: [
-                                                            Container(
-                                                              width: 50.0,
-                                                              height: 50.0,
-                                                              decoration:
-                                                                  BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primaryBackground,
-                                                                shape: BoxShape
-                                                                    .circle,
-                                                                border:
-                                                                    Border.all(
+                                                            Material(
+                                                              color: Colors
+                                                                  .transparent,
+                                                              elevation: 8.0,
+                                                              shape:
+                                                                  const CircleBorder(),
+                                                              child: Container(
+                                                                width: 50.0,
+                                                                height: 50.0,
+                                                                decoration:
+                                                                    BoxDecoration(
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .secondaryText,
+                                                                      .primaryBackground,
+                                                                  shape: BoxShape
+                                                                      .circle,
+                                                                  border: Border
+                                                                      .all(
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .secondaryText,
+                                                                  ),
                                                                 ),
-                                                              ),
-                                                              alignment:
-                                                                  const AlignmentDirectional(
-                                                                      0.0, 0.0),
-                                                              child: Icon(
-                                                                Icons
-                                                                    .sports_baseball_rounded,
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .accent1,
-                                                                size: 20.0,
+                                                                alignment:
+                                                                    const AlignmentDirectional(
+                                                                        0.0,
+                                                                        0.0),
+                                                                child:
+                                                                    ClipRRect(
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              24.0),
+                                                                  child: Image
+                                                                      .network(
+                                                                    listViewJobsRecord
+                                                                        .companyLogo,
+                                                                    width:
+                                                                        200.0,
+                                                                    height:
+                                                                        200.0,
+                                                                    fit: BoxFit
+                                                                        .cover,
+                                                                  ),
+                                                                ),
                                                               ),
                                                             ),
                                                             Align(
@@ -1103,13 +1153,7 @@ class _HomeNotSignedWidgetState extends State<HomeNotSignedWidget>
                                                                             0.0,
                                                                             0.0),
                                                                 child: Text(
-                                                                  FFLocalizations.of(
-                                                                          context)
-                                                                      .getText(
-                                                                    'vupsneqt' /* No-Code
-Platform */
-                                                                    ,
-                                                                  ),
+                                                                  '${listViewJobsRecord.jobOffer}${listViewJobsRecord.location}',
                                                                   textAlign:
                                                                       TextAlign
                                                                           .center,
@@ -1143,7 +1187,7 @@ Platform */
                                                                 FFLocalizations.of(
                                                                         context)
                                                                     .getText(
-                                                                  'i7muxf1g' /* 12 Projects */,
+                                                                  'i7muxf1g' /* RM 15,000/M */,
                                                                 ),
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
@@ -1159,6 +1203,9 @@ Platform */
                                                                           12.0,
                                                                       letterSpacing:
                                                                           0.0,
+                                                                      fontWeight:
+                                                                          FontWeight
+                                                                              .w500,
                                                                       useGoogleFonts: GoogleFonts
                                                                               .asMap()
                                                                           .containsKey(
