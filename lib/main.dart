@@ -120,7 +120,7 @@ class NavBarPage extends StatefulWidget {
 
 /// This is the private State class that goes with NavBarPage.
 class _NavBarPageState extends State<NavBarPage> {
-  String _currentPageName = 'HomeSigned';
+  String _currentPageName = 'Home';
   late Widget? _currentPage;
 
   @override
@@ -133,9 +133,8 @@ class _NavBarPageState extends State<NavBarPage> {
   @override
   Widget build(BuildContext context) {
     final tabs = {
-      'HomeNot_Signed': const HomeNotSignedWidget(),
-      'HomeSigned': const HomeSignedWidget(),
       'Home': const HomeWidget(),
+      'HomeNSI': const HomeNSIWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -160,27 +159,17 @@ class _NavBarPageState extends State<NavBarPage> {
               size: 28.0,
             ),
             label: FFLocalizations.of(context).getText(
-              'h25vf7up' /* . */,
-            ),
-            tooltip: '',
-          ),
-          BottomNavigationBarItem(
-            icon: const Icon(
-              Icons.home_filled,
-              size: 28.0,
-            ),
-            label: FFLocalizations.of(context).getText(
-              'e7aeqpr3' /* . */,
-            ),
-            tooltip: '',
-          ),
-          BottomNavigationBarItem(
-            icon: const Icon(
-              Icons.home_filled,
-              size: 28.0,
-            ),
-            label: FFLocalizations.of(context).getText(
               '0snel6tp' /* . */,
+            ),
+            tooltip: '',
+          ),
+          BottomNavigationBarItem(
+            icon: const Icon(
+              Icons.home_filled,
+              size: 28.0,
+            ),
+            label: FFLocalizations.of(context).getText(
+              'serqwnzx' /* . */,
             ),
             tooltip: '',
           )

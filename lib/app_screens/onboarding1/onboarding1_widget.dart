@@ -269,7 +269,7 @@ class _Onboarding1WidgetState extends State<Onboarding1Widget>
                                 hoverColor: Colors.transparent,
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
-                                  context.pushNamed('HomeNot_Signed');
+                                  context.pushNamed('HomeNSI');
                                 },
                                 child: Container(
                                   decoration: const BoxDecoration(),

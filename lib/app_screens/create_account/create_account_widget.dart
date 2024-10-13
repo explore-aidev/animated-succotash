@@ -716,8 +716,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                                       ));
 
                                                   context.pushNamedAuth(
-                                                      'HomeSigned',
-                                                      context.mounted);
+                                                      'Home', context.mounted);
                                                 },
                                                 text:
                                                     FFLocalizations.of(context)
@@ -929,8 +928,8 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                                 return;
                                               }
 
-                                              context.goNamedAuth('HomeSigned',
-                                                  context.mounted);
+                                              context.goNamedAuth(
+                                                  'Home', context.mounted);
                                             },
                                             child: Container(
                                               width: 25.0,

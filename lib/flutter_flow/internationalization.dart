@@ -280,116 +280,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
   },
-  // HomeNot_Signed
-  {
-    'yrns7k2x': {
-      'en': 'Welcome to Explore Jobs!',
-      'ms': '',
-    },
-    'ffnhpj2l': {
-      'en': 'Guest User',
-      'ms': '',
-    },
-    'rd0gw69v': {
-      'en': 'Search & Explore jobs!',
-      'ms': '',
-    },
-    'himawljy': {
-      'en': 'Featured Jobs',
-      'ms': '',
-    },
-    '5fupcf02': {
-      'en': 'See all',
-      'ms': '',
-    },
-    'gd7i9is4': {
-      'en': 'Design',
-      'ms': '',
-    },
-    'k6v69n69': {
-      'en': 'Fulltime',
-      'ms': '',
-    },
-    '31ls7qcw': {
-      'en': 'Junior',
-      'ms': '',
-    },
-    'kdjvw0z5': {
-      'en': 'Recomended Jobs',
-      'ms': '',
-    },
-    'ksjr73s0': {
-      'en': 'See all',
-      'ms': '',
-    },
-    'i7muxf1g': {
-      'en': 'RM 15,000/M',
-      'ms': '',
-    },
-    'h25vf7up': {
-      'en': '.',
-      'ms': '',
-    },
-  },
-  // HomeSigned
-  {
-    'zi2jfkzn': {
-      'en': 'Welcome Back!',
-      'ms': '',
-    },
-    'xo25nrfj': {
-      'en': 'Search & Explore jobs!',
-      'ms': '',
-    },
-    'hqv3n92l': {
-      'en': 'Featured Jobs',
-      'ms': '',
-    },
-    'wrjj14aj': {
-      'en': 'See all',
-      'ms': '',
-    },
-    'divgijxa': {
-      'en': 'Full Stack Flutter',
-      'ms': '',
-    },
-    'n8auhhzg': {
-      'en': 'AitekPH',
-      'ms': '',
-    },
-    'z1k0kbru': {
-      'en': 'Design',
-      'ms': '',
-    },
-    '8ufbhgqm': {
-      'en': 'Design',
-      'ms': '',
-    },
-    'nb3fa1cn': {
-      'en': 'Design',
-      'ms': '',
-    },
-    '7rznb85p': {
-      'en': 'Recomended Jobs',
-      'ms': '',
-    },
-    'vks0hk2m': {
-      'en': 'See all',
-      'ms': '',
-    },
-    'bcdg50eo': {
-      'en': 'No-Code\nPlatform',
-      'ms': '',
-    },
-    'chzejtgt': {
-      'en': '12 Projects',
-      'ms': '',
-    },
-    'e7aeqpr3': {
-      'en': '.',
-      'ms': '',
-    },
-  },
   // Home
   {
     'fywz1upg': {
@@ -433,6 +323,53 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
     '0snel6tp': {
+      'en': '.',
+      'ms': '',
+    },
+  },
+  // HomeNSI
+  {
+    'kkkoiphe': {
+      'en': 'Welcome back!',
+      'ms': '',
+    },
+    '55irkqey': {
+      'en': 'Search & Explore jobs!',
+      'ms': '',
+    },
+    't69d80vb': {
+      'en': 'Featured Jobs',
+      'ms': '',
+    },
+    'mwjd9xrj': {
+      'en': 'See all',
+      'ms': '',
+    },
+    'a7hwdrgl': {
+      'en': 'Design',
+      'ms': '',
+    },
+    'bt3q8etc': {
+      'en': 'Fulltime',
+      'ms': '',
+    },
+    'g1lexywj': {
+      'en': 'Junior',
+      'ms': '',
+    },
+    'rs447f0f': {
+      'en': 'Recomended Jobs',
+      'ms': '',
+    },
+    'kzlu9wgi': {
+      'en': 'See all',
+      'ms': '',
+    },
+    '1z5ag5nx': {
+      'en': 'RM 15,000/M',
+      'ms': '',
+    },
+    'serqwnzx': {
       'en': '.',
       'ms': '',
     },

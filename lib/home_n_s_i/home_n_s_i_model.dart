@@ -1,8 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'home_not_signed_widget.dart' show HomeNotSignedWidget;
+import 'home_n_s_i_widget.dart' show HomeNSIWidget;
 import 'package:flutter/material.dart';
 
-class HomeNotSignedModel extends FlutterFlowModel<HomeNotSignedWidget> {
+class HomeNSIModel extends FlutterFlowModel<HomeNSIWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for TextField widget.

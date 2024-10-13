@@ -8,18 +8,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'home_model.dart';
-export 'home_model.dart';
+import 'home_n_s_i_model.dart';
+export 'home_n_s_i_model.dart';
 
-class HomeWidget extends StatefulWidget {
-  const HomeWidget({super.key});
+class HomeNSIWidget extends StatefulWidget {
+  const HomeNSIWidget({super.key});
 
   @override
-  State<HomeWidget> createState() => _HomeWidgetState();
+  State<HomeNSIWidget> createState() => _HomeNSIWidgetState();
 }
 
-class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
-  late HomeModel _model;
+class _HomeNSIWidgetState extends State<HomeNSIWidget>
+    with TickerProviderStateMixin {
+  late HomeNSIModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -28,7 +29,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => HomeModel());
+    _model = createModel(context, () => HomeNSIModel());
 
     _model.textController ??= TextEditingController();
     _model.textFieldFocusNode ??= FocusNode();
@@ -126,7 +127,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                     0.0, 4.0, 0.0, 0.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    'fywz1upg' /* Welcome back! */,
+                                    'kkkoiphe' /* Welcome back! */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .labelMedium
@@ -255,7 +256,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                   decoration: InputDecoration(
                                     labelText:
                                         FFLocalizations.of(context).getText(
-                                      'tld61fua' /* Search & Explore jobs! */,
+                                      '55irkqey' /* Search & Explore jobs! */,
                                     ),
                                     labelStyle: FlutterFlowTheme.of(context)
                                         .labelMedium
@@ -344,7 +345,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                               children: [
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    'kfh8b3xr' /* Featured Jobs */,
+                                    't69d80vb' /* Featured Jobs */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
@@ -364,7 +365,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                       0.0, 0.0, 16.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'lsqy7o4j' /* See all */,
+                                      'mwjd9xrj' /* See all */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .headlineSmall
@@ -657,7 +658,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                     text: FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      '7psyezm6' /* Design */,
+                                                                      'a7hwdrgl' /* Design */,
                                                                     ),
                                                                     options:
                                                                         FFButtonOptions(
@@ -716,7 +717,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                     text: FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      '0pwalgyt' /* Fulltime */,
+                                                                      'bt3q8etc' /* Fulltime */,
                                                                     ),
                                                                     options:
                                                                         FFButtonOptions(
@@ -775,7 +776,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                     text: FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      'a1fycmcq' /* Junior */,
+                                                                      'g1lexywj' /* Junior */,
                                                                     ),
                                                                     options:
                                                                         FFButtonOptions(
@@ -939,7 +940,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                               children: [
                                 Text(
                                   FFLocalizations.of(context).getText(
-                                    'telp7jxi' /* Recomended Jobs */,
+                                    'rs447f0f' /* Recomended Jobs */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .headlineSmall
@@ -959,7 +960,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                       0.0, 0.0, 16.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'wvoktgsq' /* See all */,
+                                      'kzlu9wgi' /* See all */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .headlineSmall
@@ -1245,7 +1246,7 @@ class _HomeWidgetState extends State<HomeWidget> with TickerProviderStateMixin {
                                                                     FFLocalizations.of(
                                                                             context)
                                                                         .getText(
-                                                                      'sxcxwscz' /* RM 15,000/M */,
+                                                                      '1z5ag5nx' /* RM 15,000/M */,
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
                                                                             context)

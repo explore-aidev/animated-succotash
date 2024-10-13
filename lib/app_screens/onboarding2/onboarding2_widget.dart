@@ -271,7 +271,7 @@ class _Onboarding2WidgetState extends State<Onboarding2Widget>
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
                                   context.pushNamed(
-                                    'HomeNot_Signed',
+                                    'HomeNSI',
                                     extra: <String, dynamic>{
                                       kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,

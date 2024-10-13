@@ -8,6 +8,5 @@ export '/app_screens/get_started/get_started_widget.dart' show GetStartedWidget;
 export '/app_screens/create_account/create_account_widget.dart'
     show CreateAccountWidget;
 export '/app_screens/login/login_widget.dart' show LoginWidget;
-export '/home_not_signed/home_not_signed_widget.dart' show HomeNotSignedWidget;
-export '/home_signed/home_signed_widget.dart' show HomeSignedWidget;
 export '/home/home_widget.dart' show HomeWidget;
+export '/home_n_s_i/home_n_s_i_widget.dart' show HomeNSIWidget;
