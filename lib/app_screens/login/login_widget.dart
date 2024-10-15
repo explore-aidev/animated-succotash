@@ -650,7 +650,8 @@ class _LoginWidgetState extends State<LoginWidget>
                                                   return;
                                                 }
 
-                                                context.goNamedAuth('Homepage',
+                                                context.goNamedAuth(
+                                                    'HomepageMain',
                                                     context.mounted);
                                               },
                                               child: Container(

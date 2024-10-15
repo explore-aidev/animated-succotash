@@ -72,13 +72,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const HomepageWidget() : const OnboardingWidget(),
+          appStateNotifier.loggedIn ? const HomepageMainWidget() : const OnboardingWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) =>
-              appStateNotifier.loggedIn ? const HomepageWidget() : const OnboardingWidget(),
+          builder: (context, _) => appStateNotifier.loggedIn
+              ? const HomepageMainWidget()
+              : const OnboardingWidget(),
         ),
         FFRoute(
           name: 'Onboarding1',
@@ -315,7 +316,7 @@ class FFRoute {
                       child: Center(
                         child: Image.asset(
                           'assets/images/LOGO-EXPLORE.gif',
-                          width: 300.0,
+                          width: 350.0,
                           fit: BoxFit.cover,
                         ),
                       ),
