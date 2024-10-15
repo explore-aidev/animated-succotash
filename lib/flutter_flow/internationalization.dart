@@ -280,97 +280,49 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
   },
-  // Home
+  // Homepage
   {
-    'fywz1upg': {
-      'en': 'Welcome back!',
-      'ms': '',
-    },
-    'tld61fua': {
-      'en': 'Search & Explore jobs!',
-      'ms': '',
-    },
-    'kfh8b3xr': {
-      'en': 'Featured Jobs',
-      'ms': '',
-    },
-    'lsqy7o4j': {
-      'en': 'See all',
-      'ms': '',
-    },
-    '7psyezm6': {
-      'en': 'Design',
-      'ms': '',
-    },
-    '0pwalgyt': {
-      'en': 'Fulltime',
-      'ms': '',
-    },
-    'a1fycmcq': {
-      'en': 'Junior',
-      'ms': '',
-    },
-    'telp7jxi': {
-      'en': 'Recomended Jobs',
-      'ms': '',
-    },
-    'wvoktgsq': {
-      'en': 'See all',
-      'ms': '',
-    },
-    'sxcxwscz': {
-      'en': 'RM 15,000/M',
-      'ms': '',
-    },
-    '0snel6tp': {
-      'en': '.',
+    'ybks9yiv': {
+      'en': 'Home',
       'ms': '',
     },
   },
-  // HomeNSI
+  // ForgotPassword
   {
-    'kkkoiphe': {
-      'en': 'Welcome back!',
+    'kaimorku': {
+      'en': 'Back',
       'ms': '',
     },
-    '55irkqey': {
-      'en': 'Search & Explore jobs!',
+    '70mdkksb': {
+      'en': 'Forgot Password',
       'ms': '',
     },
-    't69d80vb': {
-      'en': 'Featured Jobs',
+    'yqfyuwtu': {
+      'en':
+          'We will send you an email with a link to reset your password, please enter the email associated with your account below.',
       'ms': '',
     },
-    'mwjd9xrj': {
-      'en': 'See all',
+    'kh8l2aze': {
+      'en': 'Your email address...',
       'ms': '',
     },
-    'a7hwdrgl': {
-      'en': 'Design',
+    'vxosr7dy': {
+      'en': 'Enter your email...',
       'ms': '',
     },
-    'bt3q8etc': {
-      'en': 'Fulltime',
+    'ww3bfn3l': {
+      'en': 'Send Link',
       'ms': '',
     },
-    'g1lexywj': {
-      'en': 'Junior',
+    '1oq3jvmz': {
+      'en': 'Home',
       'ms': '',
     },
-    'rs447f0f': {
-      'en': 'Recomended Jobs',
-      'ms': '',
-    },
-    'kzlu9wgi': {
-      'en': 'See all',
-      'ms': '',
-    },
-    '1z5ag5nx': {
-      'en': 'RM 15,000/M',
-      'ms': '',
-    },
-    'serqwnzx': {
-      'en': '.',
+  },
+  // HomepageMain
+  {
+    '3yxqks3r': {
+      'en': 'Home',
       'ms': '',
     },
   },

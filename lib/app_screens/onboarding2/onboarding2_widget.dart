@@ -270,16 +270,7 @@ class _Onboarding2WidgetState extends State<Onboarding2Widget>
                                 hoverColor: Colors.transparent,
                                 highlightColor: Colors.transparent,
                                 onTap: () async {
-                                  context.pushNamed(
-                                    'HomeNSI',
-                                    extra: <String, dynamic>{
-                                      kTransitionInfoKey: const TransitionInfo(
-                                        hasTransition: true,
-                                        transitionType:
-                                            PageTransitionType.bottomToTop,
-                                      ),
-                                    },
-                                  );
+                                  context.pushNamed('Homepage');
                                 },
                                 child: Container(
                                   decoration: const BoxDecoration(),
@@ -310,7 +301,8 @@ class _Onboarding2WidgetState extends State<Onboarding2Widget>
                                     extra: <String, dynamic>{
                                       kTransitionInfoKey: const TransitionInfo(
                                         hasTransition: true,
-                                        transitionType: PageTransitionType.fade,
+                                        transitionType:
+                                            PageTransitionType.leftToRight,
                                       ),
                                     },
                                   );

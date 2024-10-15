@@ -6,7 +6,6 @@ import 'package:provider/provider.dart';
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
-import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 
@@ -73,13 +72,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? const NavBarPage() : const OnboardingWidget(),
+          appStateNotifier.loggedIn ? const HomepageWidget() : const OnboardingWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? const NavBarPage() : const OnboardingWidget(),
+              appStateNotifier.loggedIn ? const HomepageWidget() : const OnboardingWidget(),
         ),
         FFRoute(
           name: 'Onboarding1',
@@ -112,17 +111,19 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const LoginWidget(),
         ),
         FFRoute(
-          name: 'Home',
-          path: '/home',
-          builder: (context, params) =>
-              params.isEmpty ? const NavBarPage(initialPage: 'Home') : const HomeWidget(),
+          name: 'Homepage',
+          path: '/homepage',
+          builder: (context, params) => const HomepageWidget(),
         ),
         FFRoute(
-          name: 'HomeNSI',
-          path: '/homeNSI',
-          builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'HomeNSI')
-              : const HomeNSIWidget(),
+          name: 'ForgotPassword',
+          path: '/forgotPassword',
+          builder: (context, params) => const ForgotPasswordWidget(),
+        ),
+        FFRoute(
+          name: 'HomepageMain',
+          path: '/HomepageMain',
+          builder: (context, params) => const HomepageMainWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

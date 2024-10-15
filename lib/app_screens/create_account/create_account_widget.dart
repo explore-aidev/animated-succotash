@@ -143,10 +143,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(8.0),
                                       child: Image.asset(
-                                        Theme.of(context).brightness ==
-                                                Brightness.dark
-                                            ? 'assets/images/2-e1721133965145.png'
-                                            : 'assets/images/2-e1721133965145.png',
+                                        'assets/images/2-e1721133965145.png',
                                         width: 169.0,
                                         height: 200.0,
                                         fit: BoxFit.contain,
@@ -698,25 +695,14 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                                       .doc(user.uid)
                                                       .update(
                                                           createUsersRecordData(
-                                                        displayName:
-                                                            valueOrDefault<
-                                                                String>(
-                                                          _model
-                                                              .fullNameTextController
-                                                              .text,
-                                                          'Guest User',
-                                                        ),
-                                                        email: _model
-                                                            .emailAddressTextController
+                                                        displayName: _model
+                                                            .fullNameTextController
                                                             .text,
-                                                        photoUrl:
-                                                            'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/explore-job-oqjfr3/assets/vcqv4pavdv45/images.png',
-                                                        createdTime:
-                                                            getCurrentTimestamp,
                                                       ));
 
                                                   context.pushNamedAuth(
-                                                      'Home', context.mounted);
+                                                      'HomepageMain',
+                                                      context.mounted);
                                                 },
                                                 text:
                                                     FFLocalizations.of(context)
@@ -928,8 +914,9 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                                 return;
                                               }
 
-                                              context.goNamedAuth(
-                                                  'Home', context.mounted);
+                                              context.pushNamedAuth(
+                                                  'HomepageMain',
+                                                  context.mounted);
                                             },
                                             child: Container(
                                               width: 25.0,
@@ -941,11 +928,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                                 child: Image.asset(
-                                                  Theme.of(context)
-                                                              .brightness ==
-                                                          Brightness.dark
-                                                      ? 'assets/images/google.png'
-                                                      : 'assets/images/google.png',
+                                                  'assets/images/google.png',
                                                   width: 40.0,
                                                   height: 40.0,
                                                   fit: BoxFit.cover,
@@ -960,23 +943,77 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 16.0, 0.0, 0.0),
-                                          child: Container(
-                                            width: 30.0,
-                                            height: 30.0,
-                                            decoration: const BoxDecoration(
-                                              shape: BoxShape.circle,
-                                            ),
-                                            child: ClipRRect(
-                                              borderRadius:
-                                                  BorderRadius.circular(8.0),
-                                              child: Image.asset(
-                                                Theme.of(context).brightness ==
-                                                        Brightness.dark
-                                                    ? 'assets/images/communication.png'
-                                                    : 'assets/images/communication.png',
-                                                width: 40.0,
-                                                height: 40.0,
-                                                fit: BoxFit.cover,
+                                          child: InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              ScaffoldMessenger.of(context)
+                                                  .showSnackBar(
+                                                SnackBar(
+                                                  content: Text(
+                                                    'Soon...',
+                                                    style: TextStyle(
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primaryText,
+                                                    ),
+                                                  ),
+                                                  duration: const Duration(
+                                                      milliseconds: 4000),
+                                                  backgroundColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .secondary,
+                                                ),
+                                              );
+                                            },
+                                            child: Container(
+                                              width: 30.0,
+                                              height: 30.0,
+                                              decoration: const BoxDecoration(
+                                                shape: BoxShape.circle,
+                                              ),
+                                              child: InkWell(
+                                                splashColor: Colors.transparent,
+                                                focusColor: Colors.transparent,
+                                                hoverColor: Colors.transparent,
+                                                highlightColor:
+                                                    Colors.transparent,
+                                                onTap: () async {
+                                                  ScaffoldMessenger.of(context)
+                                                      .showSnackBar(
+                                                    SnackBar(
+                                                      content: Text(
+                                                        'Soon...',
+                                                        style: TextStyle(
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .primaryText,
+                                                        ),
+                                                      ),
+                                                      duration: const Duration(
+                                                          milliseconds: 4000),
+                                                      backgroundColor:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .secondary,
+                                                    ),
+                                                  );
+                                                },
+                                                child: ClipRRect(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          8.0),
+                                                  child: Image.asset(
+                                                    'assets/images/communication.png',
+                                                    width: 40.0,
+                                                    height: 40.0,
+                                                    fit: BoxFit.cover,
+                                                  ),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -985,23 +1022,48 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 16.0, 0.0, 0.0),
-                                          child: Container(
-                                            width: 30.0,
-                                            height: 30.0,
-                                            decoration: const BoxDecoration(
-                                              shape: BoxShape.circle,
-                                            ),
-                                            child: ClipRRect(
-                                              borderRadius:
-                                                  BorderRadius.circular(8.0),
-                                              child: Image.asset(
-                                                Theme.of(context).brightness ==
-                                                        Brightness.dark
-                                                    ? 'assets/images/apple-logo.png'
-                                                    : 'assets/images/apple-logo.png',
-                                                width: 40.0,
-                                                height: 40.0,
-                                                fit: BoxFit.cover,
+                                          child: InkWell(
+                                            splashColor: Colors.transparent,
+                                            focusColor: Colors.transparent,
+                                            hoverColor: Colors.transparent,
+                                            highlightColor: Colors.transparent,
+                                            onTap: () async {
+                                              ScaffoldMessenger.of(context)
+                                                  .showSnackBar(
+                                                SnackBar(
+                                                  content: Text(
+                                                    'Soon...',
+                                                    style: TextStyle(
+                                                      color:
+                                                          FlutterFlowTheme.of(
+                                                                  context)
+                                                              .primaryText,
+                                                    ),
+                                                  ),
+                                                  duration: const Duration(
+                                                      milliseconds: 4000),
+                                                  backgroundColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .secondary,
+                                                ),
+                                              );
+                                            },
+                                            child: Container(
+                                              width: 30.0,
+                                              height: 30.0,
+                                              decoration: const BoxDecoration(
+                                                shape: BoxShape.circle,
+                                              ),
+                                              child: ClipRRect(
+                                                borderRadius:
+                                                    BorderRadius.circular(8.0),
+                                                child: Image.asset(
+                                                  'assets/images/apple-logo.png',
+                                                  width: 40.0,
+                                                  height: 40.0,
+                                                  fit: BoxFit.cover,
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -1018,16 +1080,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget>
                                       hoverColor: Colors.transparent,
                                       highlightColor: Colors.transparent,
                                       onTap: () async {
-                                        context.pushNamed(
-                                          'Login',
-                                          extra: <String, dynamic>{
-                                            kTransitionInfoKey: const TransitionInfo(
-                                              hasTransition: true,
-                                              transitionType: PageTransitionType
-                                                  .leftToRight,
-                                            ),
-                                          },
-                                        );
+                                        context.pushNamed('Login');
                                       },
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,

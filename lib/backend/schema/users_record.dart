@@ -45,16 +45,6 @@ class UsersRecord extends FirestoreRecord {
   String get phoneNumber => _phoneNumber ?? '';
   bool hasPhoneNumber() => _phoneNumber != null;
 
-  // "is_applicant" field.
-  bool? _isApplicant;
-  bool get isApplicant => _isApplicant ?? false;
-  bool hasIsApplicant() => _isApplicant != null;
-
-  // "is_employer" field.
-  bool? _isEmployer;
-  bool get isEmployer => _isEmployer ?? false;
-  bool hasIsEmployer() => _isEmployer != null;
-
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
     _displayName = snapshotData['display_name'] as String?;
@@ -62,8 +52,6 @@ class UsersRecord extends FirestoreRecord {
     _uid = snapshotData['uid'] as String?;
     _createdTime = snapshotData['created_time'] as DateTime?;
     _phoneNumber = snapshotData['phone_number'] as String?;
-    _isApplicant = snapshotData['is_applicant'] as bool?;
-    _isEmployer = snapshotData['is_employer'] as bool?;
   }
 
   static CollectionReference get collection =>
@@ -106,8 +94,6 @@ Map<String, dynamic> createUsersRecordData({
   String? uid,
   DateTime? createdTime,
   String? phoneNumber,
-  bool? isApplicant,
-  bool? isEmployer,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -117,8 +103,6 @@ Map<String, dynamic> createUsersRecordData({
       'uid': uid,
       'created_time': createdTime,
       'phone_number': phoneNumber,
-      'is_applicant': isApplicant,
-      'is_employer': isEmployer,
     }.withoutNulls,
   );
 
@@ -135,9 +119,7 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.photoUrl == e2?.photoUrl &&
         e1?.uid == e2?.uid &&
         e1?.createdTime == e2?.createdTime &&
-        e1?.phoneNumber == e2?.phoneNumber &&
-        e1?.isApplicant == e2?.isApplicant &&
-        e1?.isEmployer == e2?.isEmployer;
+        e1?.phoneNumber == e2?.phoneNumber;
   }
 
   @override
@@ -147,9 +129,7 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.photoUrl,
         e?.uid,
         e?.createdTime,
-        e?.phoneNumber,
-        e?.isApplicant,
-        e?.isEmployer
+        e?.phoneNumber
       ]);
 
   @override

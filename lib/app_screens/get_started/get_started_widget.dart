@@ -204,10 +204,7 @@ class _GetStartedWidgetState extends State<GetStartedWidget>
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: Image.asset(
-                                    Theme.of(context).brightness ==
-                                            Brightness.dark
-                                        ? 'assets/images/Group_82.png'
-                                        : 'assets/images/Group_82.png',
+                                    'assets/images/Group_82.png',
                                     width: 62.0,
                                     height: 30.0,
                                     fit: BoxFit.contain,
@@ -250,16 +247,7 @@ class _GetStartedWidgetState extends State<GetStartedWidget>
                                     hoverColor: Colors.transparent,
                                     highlightColor: Colors.transparent,
                                     onTap: () async {
-                                      context.pushNamed(
-                                        'CreateAccount',
-                                        extra: <String, dynamic>{
-                                          kTransitionInfoKey: const TransitionInfo(
-                                            hasTransition: true,
-                                            transitionType:
-                                                PageTransitionType.bottomToTop,
-                                          ),
-                                        },
-                                      );
+                                      context.pushNamed('CreateAccount');
                                     },
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
